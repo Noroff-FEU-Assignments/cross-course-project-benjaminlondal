@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Futura';
+    src: url();
+}
+/** Global
+------------------->**/
+
+body {
+    background-color: #113A8C;
+    margin: 0%;
+    
+}
+
+
+/**Header**/
+
+header {
+    background-color: #163a5a;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+
+.hamburger-menu, .cart-icon {
+    color: #1bf23c;
+}
+
+.logo {
+    max-width: 200px;
+    margin: auto;
+    flex: 3;
+}
+
+#cart-icon, #menu-checkbox {
+    flex: 1;
+}
+
+#cart-icon, .cart {
+    display: none;
+    
+}
+  
+label:hover {
+    cursor: pointer;
+}
+
+.cart-checkbox {
+    display: none;
+}
+  
+#cart-icon:checked ~ .cart {
+    display: block;
+}
+
+nav, #menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+nav {
+    position: absolute;
+    background-color: #163a5a;
+    margin-top: 47%;
+    border: 0.5px solid #1bf23c;
+    padding: 25px 10px;
+    
+
+}
+
+    
+nav a {
+    padding: 10px;
+    display: block;
+    text-decoration: underline;
+    color: #1bf23c;
+}
+
+.searchbar {
+    width: 100%;
+    margin: 25px 25px 10px 25px;
+    border-radius: 20px;
+}
+/**Main**/
+
+.home__content {
+    display: grid;
+    grid-template-rows: repeat (2fr);
+}
+
+.home__content section {
+    display: flex;
+    background-color: #163a5a;
+    margin: 17px;
+    font-size: 0.8em;
+    color: #FFF;
+    text-align: left;
+    
+
+}
+
+.home__content div p {
+    margin: 10px;
+}
+
+.home__content section > * {
+    flex: 1;
+}
+.home__img {
+    width: 100%;
+
+    
+
+    
+}
+
+
+
+/**Footer**/
+footer {
+    text-align: left;
+    color: #1bf23c;
+}

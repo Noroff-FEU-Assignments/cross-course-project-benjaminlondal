@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c965e83369.js" crossorigin="anonymous"></script>
+    <title>GameHub | Home</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
+    <header>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox"><i class="fas fa-bars hamburger-menu"></i></label>
+        <nav>
+            <a href="index.html">Home</a></li>
+            <a href="#">Buy Games</a></li>
+            <a href="#">Sell Games</a></li>
+            <a href="#">My Account</a></li>
+            <a href="#">Contact</a></li>
+        </nav>
+        <img src="images/img_logo.png" alt="GameHub Logo" class="logo" />
+        <label for="cart-icon"><i class="fas fa-shopping-cart cart-icon"></i></label>
+        <input type="checkbox" id="fas fa-cart" class="cart-checkbox">
+        <section class="cart">
+          <h3>Product One</h3>
+          <p>This is a description of the product</p>
+          <p>$50</p>
+          <a href="checkout.html">Go to checkout</a>
+        </section>       
+        <input type="text" placeholder="Search for games..." class="searchbar">      
+  </header>
+  <main class="home__content">
+    <section>
+      <div>
+        <img src="images/home_img_one.jpg" alt="Person cheering in front of a computer" class="home__img">
+      </div>
+      <div>
+        <p>Sell the games you have conquered!</p>
+        <p>Do you have games that you are done with? Let someone else buy them, we'll help!</p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <p>Pre-owned games have feelings too!</p>
+        <p>Buy pre-owned games to save the planet, and your money!</p>
+      </div>
+      <div>
+        <img src="images/home_img_two.jpg" alt="Person playing with a game controller" class="home__img">
+      </div>
+    </section>
+  </main>
+  <footer>
+    Copyright &copy;
+  </footer>
   </body>
 </html>
