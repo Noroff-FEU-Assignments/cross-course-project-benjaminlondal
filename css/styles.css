@@ -16,26 +16,45 @@ body {
 
 header {
     background-color: #163a5a;
-    display: flex;
     position: relative;
+
+
+    
+}
+
+header div {
+    display: flex;
     flex-wrap: wrap;
+    flex: 1 2 1 4;
+    justify-content: center;
+    min-width: 100%;
+
+   
 }
 
 
 
 .hamburger-menu, .cart-icon {
     color: #1bf23c;
+    
 }
 
 .logo {
-    max-width: 200px;
-    margin: auto;
-    flex: 3;
+    max-width: 150px;
+
+    
+ 
 }
 
 #cart-icon, #menu-checkbox {
     flex: 1;
 }
+
+.hamburger-menu {
+    font: normal normal normal 46px/1 FontAwesome;
+    transform: translateX(-50px);
+}
+
 
 #cart-icon, .cart {
     display: none;
@@ -65,7 +84,7 @@ nav, #menu-checkbox {
 nav {
     position: absolute;
     background-color: #163a5a;
-    margin-top: 47%;
+    margin-top: 38%;
     border: 0.5px solid #1bf23c;
     padding: 25px 10px;
     
@@ -84,6 +103,7 @@ nav a {
     width: 100%;
     margin: 25px 25px 10px 25px;
     border-radius: 20px;
+    border: 5px solid #1bf23c
 }
 /**Main**/
 
