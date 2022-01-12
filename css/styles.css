@@ -53,6 +53,7 @@ header div {
 .hamburger-menu {
     font: normal normal normal 46px/1 FontAwesome;
     transform: translateX(-50px);
+    margin: 10px 0 0 20px;
 }
 
 
