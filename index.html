@@ -11,25 +11,25 @@
     <header>
       <div>
         <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox"><i class="fas fa-bars hamburger-menu"></i></label>        
-        <nav>
-            <a href="index.html">Home</a></li>
-            <a href="#">Buy Games</a></li>
-            <a href="#">Sell Games</a></li>
-            <a href="#">My Account</a></li>
-            <a href="#">Contact</a></li>
+        <label for="menu-checkbox"><i class="fas fa-bars hamburger-menu"></i></label>
+        <nav id="grid-nav">
+            <a href="index.html" id="nav-home">Home</a>
+            <a href="#" id="nav-products">Buy Games</a>
+            <a href="#" id="nav-sell">Sell Games</a>
+            <a href="#" id="nav-account">My Account</a>
+            <a href="#" id="nav-contact">Contact</a>
         </nav>
-        <img src="images/img_logo.png" alt="GameHub Logo" class="logo" />
-        <label for="cart-icon"><i class="fas fa-shopping-cart cart-icon"></i></label>
-        <input type="checkbox" id="fas fa-cart" class="cart-checkbox">
-        <section class="cart">
+        <img src="images/img_logo.png" alt="GameHub Logo" class="logo" id="grid-logo"/>
+        <label for="cart-checkbox"><i class="fas fa-shopping-cart cart-icon"></i></label>
+        <input type="checkbox" id="cart-checkbox">
+        <section class="cart" id="grid-cart">
           <h3>This is some text</h3>
           <p>This is a description of the product</p>
           <p>$$$</p>
           <a href="checkout.html">Go to checkout</a>
         </section>       
-        <input type="text" placeholder="Search for games..." class="searchbar">    
-      </div>  
+        <input type="text" placeholder="Search for games..." class="searchbar" id="grid-search">
+      </div>
   </header>
   <main class="home__content">
     <section>

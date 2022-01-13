@@ -11,75 +11,60 @@ body {
     
 }
 
+label:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #1bf23c;
+}
 
 /**Header**/
 
 header {
     background-color: #163a5a;
     position: relative;
+    color: #1bf23c;
+
+
+}
 
 
     
-}
+
 
 header div {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 2 1 4;
-    justify-content: center;
-    min-width: 100%;
-
+    justify-content: space-between
    
-}
-
-
-
-.hamburger-menu, .cart-icon {
-    color: #1bf23c;
-    
-}
+} 
 
 .logo {
     max-width: 150px;
-
-    
+    padding-top: 10px;  
  
 }
 
-#cart-icon, #menu-checkbox {
-    flex: 1;
+.hamburger-menu, .cart-icon {
+    color: #1bf23c;
+    font: normal normal normal 35px/1 FontAwesome;
+    padding: 10px 10px;
+    
 }
 
-.hamburger-menu {
-    font: normal normal normal 46px/1 FontAwesome;
-    transform: translateX(-50px);
-    margin: 10px 0 0 20px;
-}
-
-
-#cart-icon, .cart {
-    display: none;
+.cart, #cart-checkbox  {
+    display:none;
+  
     
 }
   
-label:hover {
-    cursor: pointer;
-}
-
-.cart-checkbox {
-    display: none;
-}
-  
-#cart-icon:checked ~ .cart {
+#cart-checkbox:checked ~ .cart, #menu-checkbox:checked ~ nav {
     display: block;
 }
 
 nav, #menu-checkbox {
     display: none;
-}
-
-#menu-checkbox:checked ~ nav {
-    display: block;
 }
 
 nav {
@@ -88,25 +73,33 @@ nav {
     margin-top: 38%;
     border: 0.5px solid #1bf23c;
     padding: 25px 10px;
-    transform: translateX(-80%);
+
     
 
 }
 
-    
 nav a {
     padding: 10px;
     display: block;
-    text-decoration: underline;
     color: #1bf23c;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.searchbar {
-    width: 100%;
-    margin: 25px 25px 10px 25px;
-    border-radius: 20px;
-    border: 5px solid #1bf23c
+.cart {
+    position: absolute;
+    background-color: #163a5a;
+    margin-top: 50px;
+    border: 0.5px solid #1bf23c;
 }
+.searchbar {
+    width: 293px;
+    height: 30px;
+    margin: 10px 30px;
+    border-radius: 30px;
+    border: 5px solid #1bf23c;
+}
+
 /**Main**/
 
 .home__content {
@@ -121,8 +114,6 @@ nav a {
     font-size: 0.8em;
     color: #FFF;
     text-align: left;
-    
-
 }
 
 .home__content div p {
@@ -147,3 +138,101 @@ footer {
     text-align: left;
     color: #1bf23c;
 }
+
+
+@media screen and (min-width: 1000px) {
+    /**Header**/
+
+    header {
+        padding: 70px;
+        border-bottom: 1px solid #1bf23c;
+        display: grid;
+        grid-template-columns: 1fr auto auto auto;
+    }
+
+    #grid-logo {
+        order: 1;
+    }
+
+    #grid-nav {
+        order: 3;
+    }
+
+    #grid-search {
+        order: 2;
+    }
+       
+
+       
+    } 
+
+    nav {
+        display: inline-block;
+        margin-top: 0%;
+        border: none;
+        font-size: 28px;
+
+    }
+    nav a {
+        display: inline;
+        color: #1bf23c;
+        font-weight: bold;
+        text-decoration: none;
+        color: #FFF;
+        padding: none;
+    }
+
+    #nav-account, #nav-home {
+        display: none;
+    }
+    .logo {
+        position: absolute;
+        max-width: 370px;
+        padding-top: 10px;
+     
+    }
+    
+    .hamburger-menu {
+        display:none ;
+   }
+    
+    .cart, #cart-checkbox  {
+        display:none;
+      
+        
+    }
+      
+    #cart-checkbox:checked ~ .cart {
+        display: block;
+    }
+    
+    /**Main**/
+
+.home__content {
+    display: flex;
+    max-width: 1920px;
+
+}
+
+.home__content section {
+    background-color: #163a5a;
+    margin: 150px 50px;
+    font-size: 0.8em;
+    color: #FFF;
+    text-align: left;
+    
+}
+
+.home__content div p {
+    margin: 10px;
+    font-size: 2em;
+}
+
+
+.home__img {
+    width: 100%;    
+}
+
+
+}
+
