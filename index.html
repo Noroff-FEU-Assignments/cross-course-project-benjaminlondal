@@ -10,25 +10,37 @@
   <body>
     <header>
       <div>
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox"><i class="fas fa-bars hamburger-menu"></i></label>
-        <nav id="grid-nav">
-            <a href="index.html" id="nav-home">Home</a>
-            <a href="#" id="nav-products">Buy Games</a>
-            <a href="#" id="nav-sell">Sell Games</a>
-            <a href="#" id="nav-account">My Account</a>
-            <a href="#" id="nav-contact">Contact</a>
-        </nav>
-        <img src="images/img_logo.png" alt="GameHub Logo" class="logo" id="grid-logo"/>
-        <label for="cart-checkbox"><i class="fas fa-shopping-cart cart-icon"></i></label>
-        <input type="checkbox" id="cart-checkbox">
-        <section class="cart" id="grid-cart">
+        <div>
+          <input type="checkbox" id="menu-checkbox">
+          <label for="menu-checkbox"><i class="fas fa-bars hamburger-menu"></i></label>
+        </div>
+        <div class="nav-container">
+          <div id="flex-nav">
+            <nav>
+              <a href="index.html" id="nav-home">Home</a>
+              <a href="#" id="nav-products">Buy Games</a>
+              <a href="#" id="nav-sell">Sell Games</a>
+              <a href="#" id="nav-account">My Account</a>
+              <a href="#" id="nav-contact">Contact</a>
+            </nav>
+          </div>
+          <div id="flex-search">
+            <input type="text" placeholder="Search for games..." class="searchbar">
+          </div>
+        </div>
+        <div id="flex-logo">
+          <img src="images/img_logo.png" alt="GameHub Logo" class="logo"/>
+        </div>
+        <div id="flex-cart">
+          <label  for="cart-checkbox" class="cart-icon"><i class="fas fa-shopping-cart" ></i></label>
+        </div> 
+          <input type="checkbox" id="cart-checkbox">
+          <section class="cart">
           <h3>This is some text</h3>
           <p>This is a description of the product</p>
           <p>$$$</p>
           <a href="checkout.html">Go to checkout</a>
-        </section>       
-        <input type="text" placeholder="Search for games..." class="searchbar" id="grid-search">
+          </section>
       </div>
   </header>
   <main class="home__content">
@@ -36,14 +48,14 @@
       <div>
         <img src="images/home_img_one.jpg" alt="Person cheering in front of a computer" class="home__img">
       </div>
-      <div>
-        <p>Sell the games you have conquered!</p>
+      <div class="home__image-one">
+        <p class="rockwell">Sell the games you have conquered!</p>
         <p>Do you have games that you are done with? Let someone else buy them, we'll help!</p>
       </div>
     </section>
     <section>
-      <div>
-        <p>Pre-owned games have feelings too!</p>
+      <div class="home__image-two"> 
+        <p class="rockwell">Pre-owned games have feelings too!</p>
         <p>Buy pre-owned games to save the planet, and your money!</p>
       </div>
       <div>
