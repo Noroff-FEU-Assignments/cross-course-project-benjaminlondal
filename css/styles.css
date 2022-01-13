@@ -143,68 +143,66 @@ footer {
 @media screen and (min-width: 1000px) {
     /**Header**/
 
-    header {
-        padding: 70px;
-        border-bottom: 1px solid #1bf23c;
-        display: grid;
-        grid-template-columns: 1fr auto auto auto;
-    }
+header {
+    padding: 70px;
+    border-bottom: 1px solid #1bf23c;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+}
 
-    #grid-logo {
-        order: 1;
-    }
+#grid-logo {
+    order: 1;
+}
 
-    #grid-nav {
-        order: 3;
-    }
+#grid-nav {
+    order: 3;
+}
 
-    #grid-search {
-        order: 2;
-    }
-       
+#grid-search {
+    order: 2;
+} 
 
-       
-    } 
+ nav {
+    display: inline-block;
+    margin-top: 0%;
+    border: none;
+    font-size: 28px;
 
-    nav {
-        display: inline-block;
-        margin-top: 0%;
-        border: none;
-        font-size: 28px;
+}
 
-    }
-    nav a {
-        display: inline;
-        color: #1bf23c;
-        font-weight: bold;
-        text-decoration: none;
-        color: #FFF;
-        padding: none;
-    }
+nav a {
+    display: inline;
+    color: #1bf23c;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+    padding: none;
+}
 
-    #nav-account, #nav-home {
-        display: none;
-    }
-    .logo {
-        position: absolute;
-        max-width: 370px;
-        padding-top: 10px;
+#nav-account, #nav-home {
+    display: none;
+}
+
+.logo {
+    position: absolute;
+    max-width: 370px;
+    padding-top: 10px;
      
-    }
+}
     
-    .hamburger-menu {
-        display:none ;
-   }
+.hamburger-menu {
+    display:none;
+}
     
-    .cart, #cart-checkbox  {
-        display:none;
-      
+.cart, #cart-checkbox  {
+    display:none;
+    
         
-    }
+}
       
-    #cart-checkbox:checked ~ .cart {
-        display: block;
-    }
+#cart-checkbox:checked ~ .cart {
+    display: block;
+}
     
     /**Main**/
 
