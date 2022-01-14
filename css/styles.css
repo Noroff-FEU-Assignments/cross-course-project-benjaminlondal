@@ -4,20 +4,24 @@
 }
 /** Global
 ------------------->**/
+
 * {
-    padding: 0;
+
     margin: 0;
+    padding: 0;
+
 }
+
+
+
 body {
-    background: rgb(22,58,90);
-    background: linear-gradient(90deg, rgba(22,58,90,0.9108018207282913) 11%, rgba(17,58,140,0.9920343137254902) 28%);background-color: #113A8C;
+    background-color: #113A8C;
+    margin: 0%;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    margin: 0;
     
 }
-
 
 label:hover {
     cursor: pointer;
@@ -27,17 +31,6 @@ a:hover {
     color: #1bf23c;
 }
 
-.rockwell {
-    font-family: Rockwell, "Courier New", Courier, Georgia,
-    Times, "Times New Roman", serif;
-    font-weight: bold;
-}
-
-.home__content div p {
-    margin: 10px;
-    font-size: 3vw;
-}
-
 /**Header**/
 
 header {
@@ -45,27 +38,16 @@ header {
     position: relative;
     color: #1bf23c;
 
-
 }
 
 
-header div {
+#header-inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
    
 } 
 
-.logo {
-    position: relative;
-    max-width: 150px;
-    padding-top: 10 25px;  
- 
-}
-
-.nav-container {
-    order: 4;
-}
 .hamburger-menu, .cart-icon {
     color: #1bf23c;
     font: normal normal normal 35px/1 FontAwesome;
@@ -73,11 +55,18 @@ header div {
     
 }
 
+.logo {
+    max-width: 150px;
+    padding-top: 10px;  
+ 
+}
+
 .cart, #cart-checkbox  {
     display:none;
   
     
 }
+
   
 #cart-checkbox:checked ~ .cart, #menu-checkbox:checked ~ nav {
     display: block;
@@ -85,12 +74,6 @@ header div {
 
 nav, #menu-checkbox {
     display: none;
-}
-
-.nav-container {
-    width: auto;
-    margin: 5px auto;
-
 }
 
 nav {
@@ -120,27 +103,26 @@ nav a {
 .searchbar {
     min-width: 293px;
     height: 30px;
+    margin: 10px 30px;
     border-radius: 30px;
     border: 5px solid #1bf23c;
-}
-
-#flex-search {
-    margin: 5px auto;
-    width: 303px;
+    margin: 0 auto;
+    order: 4;
 }
 
 /**Main**/
 
+.home__content {
+    display: grid;
+    grid-template-rows: repeat (2fr);
+}
 
 .home__content section {
     display: flex;
-    grid-template-rows: repeat (2,1fr);
     background-color: #163a5a;
-    margin: 17px;
     font-size: 0.8em;
     color: #FFF;
     text-align: left;
-
 }
 
 .home__content div p {
@@ -150,9 +132,18 @@ nav a {
 .home__content section > * {
     flex: 1;
 }
-.home__img {
+       
+
+.home__image_one-large, .home__image_two-large {
+    display: none;
+}
+
+.home_three {
+    display: none !important;
+}
+.home__image_one, .home__image_two  {
+    display: block;
     width: 100%;
- 
 }
 
 
@@ -161,72 +152,70 @@ nav a {
 footer {
     text-align: left;
     color: #1bf23c;
-    margin: 10px;
 }
 
 
 @media screen and (min-width: 600px) {
-    
     /**Header**/
 header {
+    padding-left: 370px;
     height: 100%;
     border-bottom: 1px solid #1bf23c;
 }
 
-header div{
+#header-inner{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-
+    justify-content: flex-start;
+    height: 100%;
 }
 
-.nav-container {
-    width: 68%;
-    margin-left: 320px;
-
+.hamburger-menu {
+    display:none !important;
 }
 
-header div {
-    flex: 1 1 1 1;
+.logo {
+    position:absolute;
+    left: 0;
+    max-width: 370px;
+    padding-top: 5px;
+     
 }
 
-#flex-logo {
-    order: 1;
 
+#grid-logo {
+
+    max-width: 370px;
 }
 
-#flex-search {
+#grid-search {
     order: 2;
-}
+} 
 
-#flex-nav {
+#grid-nav {
     order: 3;
+    
 }
 
-#flex-cart {
+.cart-icon {
     position: absolute;
-    right: 0;
-    margin-top: 60px;
-    margin-right: 25px;
-
+    right : 0;
+    top: 68px;
 }
 
 .searchbar {
     min-width: 470px;
-    margin-top: 75px;
+    margin: 80px 0 0 0;
 }
 
 nav {
     position: relative;
     display: inline-block;
-    margin: 60px 15px 0 0;
+    margin-top: 57px;
     border: none;
-    font-size: 1.5em;
+    font-size: 28px;
     padding: none;
-    background: none;
-    width: 700px;
+    background:none;
 
 }
 
@@ -243,20 +232,7 @@ nav a {
     display: none;
 }
 
-.logo {
-    max-width: 370px;
-    padding: 15px;
-    position: absolute;
-    left: 0;
-    margin-top: 10px;
 
-  
-     
-}
-    
-.hamburger-menu {
-    display:none !important;
-}
     
 .cart, #cart-checkbox  {
     display:none;
@@ -272,41 +248,86 @@ nav a {
     /**Main**/
 
 .home__content {
-        display: flex;
-        flex-direction: row;
-        max-width: 1920px;
-        align-items: center;
-        margin: auto;
-        padding: 100px;
-}
-
-.home__content > * {
-    flex: 2 1;
-}
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 130px;
     
+}
+
+
 .home__content section {
-        display: flex;
-        flex-direction: column;
-        background-color: #163a5a;
-        margin: 17px;
-        font-size: 0.8em;
-        color: #FFF;
-        text-align: left;
-        max-width: 1500px;
-        border: 1px solid #1bf23c;
-        
+    background-color: #163a5a;
+    font-size: 0.8em;
+    color: #FFF;
+    text-align: left;
+    border: 1px solid #1bf23c;
+    
 }
 
-
-.home__content section > * {
-    flex: 2 1;
-}
 .home__content div p {
     margin: 10px;
     font-size: 2em;
 }
 
+.home__image_one, .home__image_two {
+    display: none;
 
+}
+
+.home__image_one-large, .home__image_two-large {
+    display: block;
+}
+
+.home__image_one-large {
+    width: 964px;
+    height: 524px;
+    object-fit: cover;
+    order: 1;
+
+}
+.home__image_two-large {
+    width: 532px;
+    height: 224px;
+    object-fit: cover;
+    order: 1;
+
+}
+.home__image_three {
+    width: 100%;
+}
+
+.home_one {
+    display: flex;
+    flex-direction: column;
+    max-width: 964px;
+    height: 720px;
+}
+
+.home_two, .home_three {
+    display: flex;
+    width: 532px;
+    flex-direction: column;
+}
+.home_two_image, .home_one_image {
+    order: 1;
+}
+.home_two_info, .home_one_info {
+    order: 2;
+}
+.home_three {
+    display: block !important;
+    margin-top: 29px;
+}
+
+.home__content-left {
+    max-width: 100%;
+}
+
+.home__content-right, .homethree {
+    max-width: 500px;
+}
 
 }
 
