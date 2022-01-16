@@ -67,7 +67,7 @@ a:hover {
 }
 
 .profile-icon {
-    display: none;
+    display: none !important;
 }
 
   
