@@ -101,13 +101,13 @@ nav a {
 .home__content {
     display: grid;
     grid-template-rows: repeat (2fr);
+    
 }
 
 .home__content section {
     display: flex;
     background-color: #163a5a;
     margin: 17px;
-    font-size: 0.8em;
     color: #FFF;
     text-align: left;
 }
@@ -177,7 +177,6 @@ nav {
     display: inline-block;
     margin-top: 50px;
     border: none;
-    font-size: 28px;
     padding: none;
 
 }
@@ -221,7 +220,6 @@ nav a {
 
 .home__content {
     display: flex;
-    max-width: 1920px;
 
 }
 
@@ -232,16 +230,11 @@ nav a {
 .home__content section {
     background-color: #163a5a;
     margin: 150px 50px;
-    font-size: 0.8em;
     color: #FFF;
     text-align: left;
     
 }
 
-.home__content div p {
-    margin: 10px;
-    font-size: 2em;
-}
 
 
 .home__image {
