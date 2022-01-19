@@ -5,18 +5,18 @@ main {
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, 33%);
     width: 100%;
-    max-width: 1500px;
+    max-width: 1000px;
     margin:auto;
     margin-top: 200px;
-    gap: 100px;
+    gap: 50px;
 }
 
 main div {
     border: var(--border);
     gap: 10px;
     width: 100%;
-    max-width: 310px;
     border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 img {
@@ -27,16 +27,24 @@ main p {
     background-color: var(--color_secondary);
     font-size: 2em;
     color: #FFF;
-    font-family: Futura;
+    font-family: Futura-pt;
+    margin: auto;
 }
 
 main a {
+    display: block;
     width: 100%;
-    max-width: 310px;
     font-size: 2.5em;
     background: var(--color_secondary);
     text-align: center;
     text-decoration: none;
     color: var(--color_tertiary);
     border: var(--border);
+}
+
+.scroll-top {
+    color: white;
+    background: none;
+    border: none;
+    grid-column: 2;
 }
