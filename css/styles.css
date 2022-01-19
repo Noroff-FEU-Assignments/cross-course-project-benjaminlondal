@@ -2,6 +2,7 @@
     font-family: 'Rockwell';
     src: url(../fonts/ROCK.TTF) format('truetype');
 }
+
 /** Global
 ------------------->**/
 
@@ -29,6 +30,10 @@ label:hover {
 a:hover {
     color: #1bf23c;
 }
+
+.active {
+    color: #1bf23c;
+}
 /** Home 
 ---------------->**/
 
@@ -39,7 +44,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background-color: #163a5a;
+    background-color:#163a5a ;
     padding-bottom: 10px;
    
 } 
@@ -54,8 +59,7 @@ a:hover {
 .logo {
     width: 100%;
     max-width: 150px;
-    padding: 25px;  
- 
+    padding: 25px; 
 }
 
 .cart h3 {
@@ -67,7 +71,7 @@ a:hover {
 }
 
 .profile-icon {
-    display: none !important;
+    display: none;
 }
 
   
@@ -88,7 +92,7 @@ nav {
 nav a {
     padding: 10px;
     display: block;
-    color: #1bf23c;
+    color: #FFF;
     font-weight: bold;
     text-decoration: none;
 }
@@ -202,7 +206,6 @@ header {
     justify-content: flex-start;
     flex-wrap: wrap;
     border-bottom: 1px solid #1bf23c;
-    margin-left: 5px;
     width: 100%;
     max-width: 1920px;
     padding-bottom: 0px;
@@ -273,7 +276,7 @@ nav a {
     padding: 0px 50px 0 ;
 }
 
-#nav-account, #nav-home, .cart, #cart-checkbox  {
+#nav-account, .cart, #cart-checkbox  {
     display: none;
 }
       
@@ -308,13 +311,20 @@ nav a {
     border: 1px solid #1bf23c;    
 }
 
+.home_content-left {
+    max-width: 100%;
+    background-color: #163a5a;
+    border: 1px solid #1bf23c;
+}
+
+.home_content-right {
+    max-width: 500px;
+    margin-left: 25px !important;
+}
+
 .home_one {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 964px;
-    height: 100%;
-    max-height: 756px;
 }
 
 .home_two, .home_three {
@@ -345,9 +355,8 @@ nav a {
 
 .home__image_one-large, .home_one {
     width: 100%;
-    max-width: 964px;
+    max-width: 996px;
     height: 100%;
-    max-height: 524px;
     order: 1;
     border: 1px solid #1bf23c;
 }   
@@ -359,6 +368,7 @@ nav a {
     max-height: 224px;
     object-fit: cover;
     order: 1;
+    border: var(--border);
 }
 
 .home__image_three {
@@ -377,14 +387,7 @@ nav a {
     margin-top: 29px;
 }
 
-.home_content-left {
-    max-width: 100%;
-}
 
-.home_content-right {
-    max-width: 500px;
-    margin-left: 25px !important;
-}
 /** Footer **/
 footer {
     display: flex;
