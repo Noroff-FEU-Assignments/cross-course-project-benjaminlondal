@@ -3,14 +3,10 @@
     src: url(../fonts/ROCK.TTF) format('truetype');
 }
 
+@import url(variables.css);
 /** Global
 ------------------->**/
 
-* {
-    margin: 0;
-    padding: 0;
-
-}
 
 
 
@@ -20,19 +16,51 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    
+    font-family: var(--font_fut)
 }
+
+h2 {
+    font-family: var(--font_fut);
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #FFF;
+}
+
+
 
 label:hover {
     cursor: pointer;
 }
 
-a:hover {
-    color: #1bf23c;
+a:hover,
+.active {
+    color: var(--color_tertiary)
 }
 
-.active {
-    color: #1bf23c;
+.cta {
+    display: block;
+    max-height: 60px;
+    max-width: 243px;
+    margin: 0 auto;
+    border: var(--border);
+    color: var(--color_tertiary);
+    background: var(--color_secondary);
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cta:hover {
+    color: var(--color_secondary);
+    background: var(--color_tertiary);
+}
+
+img {
+    width: 100%;
 }
 /** Home 
 ---------------->**/
@@ -104,6 +132,13 @@ nav a {
     right: 0;
     border: 0.5px solid #1bf23c;
     color: #1bf23c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cart p {
+    text-align: center;
+    text-decoration: underline;
 }
 
 .hamburger-menu {
@@ -161,7 +196,7 @@ nav a {
     margin-left: 10px;
     padding-top: 20px;
     font-size: 4vw;
-    font-family: rockwell;
+    font-family: rockwell; 
     font-weight: normal;
 }
 
@@ -179,8 +214,13 @@ nav a {
 
 .home__image_one, .home__image_two  {
     display: block;
-    width: 100%;
 }
+
+.home__content button {
+    order: 4;
+}
+
+
 
 
 
@@ -194,6 +234,10 @@ footer {
 
 
 @media screen and (min-width: 1024px) {
+
+.cta {
+    font-size: 1.5em;
+}
     /**Header**/
 header {
     background-color: #163a5a;
@@ -218,7 +262,6 @@ header {
 
 .logo {
     position: absolute;
-    width: 100%;
     max-width: 370px;
     top: 10px;
     left: 25px;
@@ -275,7 +318,6 @@ nav a {
     color: #FFF;
     padding: 0px 50px 0 ;
 }
-
 #nav-account, .cart, #cart-checkbox  {
     display: none;
 }
@@ -291,13 +333,20 @@ nav a {
     right: 0;
     border: 0.5px solid #1bf23c;
     color: #1bf23c;
+    z-index: 1;
 }
 
     /**Main**/
 
+.cta {
+    max-width: 300px;
+    max-height: 60px;
+}
+
 .home__content {
     width: 90%;
     max-width: 1500px;
+    max-height: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: auto;
@@ -305,21 +354,7 @@ nav a {
 }
 
 .home__content section {
-    background-color: #163a5a;
-    color: #FFF;
-    text-align: left;
     border: 1px solid #1bf23c;    
-}
-
-.home_content-left {
-    max-width: 100%;
-    background-color: #163a5a;
-    border: 1px solid #1bf23c;
-}
-
-.home_content-right {
-    max-width: 500px;
-    margin-left: 25px !important;
 }
 
 .home_one {
@@ -332,6 +367,12 @@ nav a {
     width: 100%;
     max-width: 532px;
     flex-direction: column;
+    max-width: 500px;
+    margin-left: 25px !important;
+}
+
+.home_two .cta {
+    order: 4;
 }
 
 .home__content h2 {
@@ -354,7 +395,6 @@ nav a {
 }
 
 .home__image_one-large, .home_one {
-    width: 100%;
     max-width: 996px;
     height: 100%;
     order: 1;
@@ -362,17 +402,12 @@ nav a {
 }   
 
 .home__image_two-large {
-    width: 100%;
     max-width: 532px;
     height: 100%;
     max-height: 224px;
     object-fit: cover;
     order: 1;
     border: var(--border);
-}
-
-.home__image_three {
-    width: 100%;
 }
 
 
@@ -382,9 +417,17 @@ nav a {
 .home_two_info, .home_one_info {
     order: 2;
 }
+
+.home_one_info {
+    text-align: center;
+    margin-top: 50px;
+    max-height: 40%;
+}
+
 .home_three {
     display: block !important;
     margin-top: 29px;
+    text-align: center;
 }
 
 

@@ -1,50 +1,58 @@
 @import url(variables.css);
 
+
+main {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+main div {
+    background-color: var(--color_secondary);
+    border-radius: 5px;
+    border: var(--border);
+    margin-bottom: 25px;
+}
+
+main p {
+    color: #FFF;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: rockwell; 
+}
+
+@media screen and (min-width: 1024px) {
+
+h2 {
+        font-size: 3em;
+}
+
+
 main {
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, 33%);
     width: 100%;
     max-width: 1000px;
-    margin:auto;
+    margin: auto;
     margin-top: 200px;
     gap: 50px;
 }
 
-main div {
-    border: var(--border);
-    gap: 10px;
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 50px;
-}
 
-img {
-    width: 100%;
-}
- 
 main p {
-    background-color: var(--color_secondary);
-    font-size: 2em;
-    color: #FFF;
-    font-family: Futura-pt;
-    margin: auto;
+    font-size: 2em; 
 }
 
-main a {
-    display: block;
-    width: 100%;
-    font-size: 2.5em;
-    background: var(--color_secondary);
-    text-align: center;
-    text-decoration: none;
-    color: var(--color_tertiary);
-    border: var(--border);
-}
+
 
 .scroll-top {
     color: white;
     background: none;
     border: none;
     grid-column: 2;
+}
+
 }
