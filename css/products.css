@@ -1,9 +1,10 @@
 @import url(variables.css);
 
-
+/**Products--
+---------------**/
 main {
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     margin: 20px auto;
     text-align: center;
 }
@@ -20,7 +21,7 @@ main p {
     margin: 0 auto;
     padding: 5px;
     font-size: 1.2em;
-    font-family: rockwell; 
+    font-family: var(--font_rock)
 }
 
 .scroll-top {
@@ -49,6 +50,9 @@ main p {
     text-align: left;
 }
 
+.product_image .cta {
+    margin-top: 25px;
+}
 
 
 
@@ -57,24 +61,28 @@ main p {
 /** Products --
 ----------------->**/
 h2 {
-        font-size: 3em;
+        font-size: 2em;
 }
 
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     width: 100%;
     max-width: 1000px;
+    min-width: 0;
     margin: auto;
     margin-top: 200px;
     gap: 50px;
 }
 
+.product_image {
+    max-width: 300px;
+}
 
 main p {
-    font-size: 2em; 
+    font-size: 1.5em; 
 }
 
 
@@ -88,17 +96,18 @@ main p {
 
 .product_specific {
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 45px 180px 60px;
     width: 100%;
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .product_image_specific {
-    width: 400px;
+    max-width: 350px;
+    margin: 0 auto;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 4;
 }
@@ -110,31 +119,36 @@ main p {
     grid-row-end: 2;
 }
 
-.product_specific_name {
+.product_specific h2 {
+    text-align: left;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
 
 }
 
 .product_specific_info {
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
 .cost {
-    grid-column-start: 6;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .product_specific .cta {
     width: 300px;
+    margin-top: none;
     grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 

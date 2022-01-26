@@ -16,7 +16,15 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    font-family: var(--font_fut)
+    font-family: var(--font_fut);
+    color: #FFF;
+}
+
+h1 {
+    font-family: var(--font_fut);
+    font-size: 3em;
+    color: #FFF;
+    text-align: center;
 }
 
 h2 {
@@ -29,7 +37,7 @@ h2 {
 
 
 
-label:hover {
+label:hover, a:hover {
     cursor: pointer;
 }
 
@@ -52,7 +60,7 @@ a:hover,
     text-decoration: none;
     padding: 5px 10px;
     text-align: center;
-    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .cta:hover {
@@ -62,9 +70,14 @@ a:hover,
 
 img {
     width: 100%;
+    border-radius: 5px;
 }
-/** Home 
----------------->**/
+
+.cost {
+    color: var(--color_tertiary);
+    padding: 5px 10px;
+    text-align: center;
+}
 
 /**Header**/
 
@@ -171,6 +184,18 @@ nav a {
     justify-self: end;
 }
 
+/**Footer**/
+footer {
+    text-align: center;
+    color: #1bf23c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/** Home 
+---------------->**/
+
+
 
 
 /**Main**/
@@ -178,9 +203,13 @@ nav a {
 .home__content section {
     display: flex;
     background-color: #163a5a;
-    color: #FFF;
     text-align: left;
 }
+
+.home__content .cta {
+    margin-bottom: 10px;
+}
+
 
 .home_three {
     display: none !important;
@@ -188,7 +217,7 @@ nav a {
 
 .home__content h2 {
     margin-left: 10px;
-    font-family: Futura-pt;
+    font-family: var(--font_fut);
     font-weight: bold;
     font-size: 4vw;
 }
@@ -197,8 +226,7 @@ nav a {
     margin-left: 10px;
     padding-top: 20px;
     font-size: 4vw;
-    font-family: rockwell; 
-    font-weight: normal;
+    font-family: var(--font_rock);
 }
 
 
@@ -219,18 +247,6 @@ nav a {
 
 .home__content button {
     order: 4;
-}
-
-
-
-
-
-/**Footer**/
-footer {
-    text-align: center;
-    color: #1bf23c;
-    font-weight: bold;
-    margin-bottom: 10px;
 }
 
 
@@ -330,11 +346,15 @@ nav a {
 .cart {
     position: absolute;
     background-color: #163a5a;
-    margin-top: 247px;
+    margin-top: 350px;
     right: 0;
     border: 0.5px solid #1bf23c;
     color: #1bf23c;
     z-index: 1;
+}
+
+.cart .cta {
+    margin-bottom: 10px;
 }
 
     /**Main**/
@@ -430,6 +450,7 @@ nav a {
     margin-top: 29px;
     text-align: center;
 }
+
 
 
 /** Footer **/

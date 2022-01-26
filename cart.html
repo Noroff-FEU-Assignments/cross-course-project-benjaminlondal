@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buy used copies of Racing game">
-    <title>GameHub | Specific Product</title>
+    <meta name="description" content="Buy and sell used videogames">
+    <title>GameHub | Shopping Cart</title>
+    <link href="css/cart.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/products.css" rel="stylesheet">
+    <link href="css/variables.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ioh2pps.css">
     <script src="https://kit.fontawesome.com/c965e83369.js" crossorigin="anonymous"></script>
   </head>
@@ -23,7 +24,7 @@
         <input type="checkbox" id="cart-checkbox">
         <section class="cart">
           <h3>1x Racing</h3>
-          <p>$$$</p>
+          <p>Total: $$$</p>
           <a href="cart.html" class="cta"> View Cart </a>
           <a href="checkout.html" class="cta"> Checkout </a>
         </section>       
@@ -40,18 +41,25 @@
           <i class="fas fa-user"></i>
         </div>
       </div>
-    </header>
-    <main class="product_specific">
-        <img src="images/image_product_one.jpg" alt="Racing game" class="product_image_specific">
-        <h2>Racing (2021)</h2>
-        <p class="cost">Price $$$</p>
-        <p class="product_specific_info">Racing is the new racecar game on Playbox. Build and upgrade your cars to race for grand prizes!</p>
-        <a href="cart.html" class="cta"> Add to Cart </a>
-    </main>
-    <footer>
-        <div>
-          <i class="fab fa-instagram footer-icon"></i><i class="fab fa-twitter footer-icon"></i><i class="fab fa-facebook-square footer-icon"></i>
-        </div>
-        Copyright &copy; 2021-2022 GameHub 
-      </footer>
-      </html>
+  </header>
+  <main class="cart-content">
+      <section class="cart_content-one">
+        <img src="images/image_product_one.jpg" alt="Racing game" class="cart-image">
+            <div class="cart_content-info">
+                <h2>Racing</h2>
+                <label for="quantity" class="label-form">Qty</label>
+                <input type="number" name="Quantity" id="quantity">
+                <p>Price $$$</p> 
+            </div>
+      </section>
+        <p>Total $$$</p>
+        <a href="checkout.html" class="cta"> TO CHECKOUT </a>
+  </main>
+  <footer>
+    <div>
+      <i class="fab fa-instagram footer-icon"></i><i class="fab fa-twitter footer-icon"></i><i class="fab fa-facebook-square footer-icon"></i>
+    </div>
+    Copyright &copy; 2021-2022 GameHub 
+  </footer>
+  </body>
+</html>
