@@ -1,12 +1,13 @@
-
+/**Checkout--
+-------------------**/
 
 .checkout {
     margin: 0 auto;
     width: 100%;
-    max-width: 1000px;
+    max-width: 300px;
 }
 
-.send:hover {
+#send:hover {
     cursor: pointer;
 }
 
@@ -22,6 +23,14 @@ input {
     max-width: 386px;
 }
 
+.checkout_info, .form-wrapper {
+    background: var(--color_secondary);
+    border: var(--border);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
 label {
     color: #FFF;
     margin-left: 10px;
@@ -30,34 +39,32 @@ label {
 .checkout_content {
     display: flex;
     gap: 10%;
-}
-
-.checkout_info, .form-wrapper {
-    background: var(--color_secondary);
-    border: var(--border);
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 50px;
-}
-.form-wrapper {
-    width: 100%;
-    display: flex;
     flex-direction: column;
 }
 
-#exp {
-    max-width: 60px;
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    margin: 0px auto;
 }
 
-#cvc {
-    max-width: 30px;
-}
 .checkout_info {
     display: grid;
     width: 100%;
+    max-width: 1000px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
+
+#send {
+    max-height: 60px;
+    width: 100%;
+    margin-top: 50px;
+}
+
 .checkout_info .cost {
     font-size: 1.2em;
     grid-row-start: 1;
@@ -82,4 +89,56 @@ label {
     max-height: 88px;
     grid-column-start: 3;
     grid-row-start: 1;
+}
+
+#exp {
+    max-width: 60px;
+}
+
+#cvc {
+    max-width: 30px;
+}
+
+/**Checkout Success--
+-------------------------**/
+.success_top {
+    margin: 0 10px;
+}
+.success_container {
+    text-align: center;
+
+}
+
+.success {
+    color: var(--color_tertiary);
+    font: normal normal normal 200px/1 FontAwesome;
+    margin-bottom: 25px;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+.checkout, .form-wrapper {
+    max-width: 1000px;
+}
+
+.form-wrapper {
+    align-items: center;
+}
+
+label {
+    margin-left: 0px;
+}
+
+input {
+    width: 400px;
+}
+
+/**Checkout Success--
+-------------------------**/
+
+.success {
+    font: normal normal normal 350px/1 FontAwesome;
+
+}
 }

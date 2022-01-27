@@ -91,8 +91,8 @@ img {
    
 } 
 
-.hamburger-menu, .cart-icon, .footer-icon, .profile-icon {
-    color: #1bf23c;
+.hamburger-menu, .cart-icon, .footer-icon, #profile-icon {
+    color: var(--color_tertiary);
     font: normal normal normal 35px/1 FontAwesome;
     padding: 10px 10px;
     
@@ -101,7 +101,7 @@ img {
 .logo {
     width: 100%;
     max-width: 150px;
-    padding: 25px; 
+    padding: 25px;
 }
 
 .cart h3 {
@@ -112,7 +112,7 @@ img {
     display: none;   
 }
 
-.profile-icon {
+#profile-icon {
     display: none;
 }
 
@@ -144,15 +144,14 @@ nav a {
     background-color: #163a5a;
     margin-top: 50px;
     right: 0;
-    border: 0.5px solid #1bf23c;
-    color: #1bf23c;
+    border: 0.5px solid var(--color_tertiary);
+    color: var(--color_tertiary);
     padding: 10px;
     border-radius: 5px;
 }
 
 .cart p {
     text-align: center;
-    text-decoration: underline;
 }
 
 .hamburger-menu {
@@ -168,10 +167,10 @@ nav a {
 }
 
 .searchbar {
-    min-width: 293px;
+    min-width: 290px;
     min-height: 30px;
     border-radius: 30px;
-    border: 5px solid #1bf23c;
+    border: 5px solid var(--color_tertiary);
     margin: 0 auto;
     grid-column-start: 1;
     grid-row-start: 2;
@@ -187,7 +186,7 @@ nav a {
 /**Footer**/
 footer {
     text-align: center;
-    color: #1bf23c;
+    color: var(--color_tertiary);
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -204,6 +203,10 @@ footer {
     display: flex;
     background-color: #163a5a;
     text-align: left;
+}
+
+.home_content-left {
+    margin: 10px auto;
 }
 
 .home__content-right {
@@ -297,17 +300,18 @@ header {
     order: 3;    
 }
 
-.profile-icon {
-    display: block;
+#profile-icon {
     position: absolute;
     right : 100px;
     top: 68px;
+    z-index: 1;
 }
 
 .cart-icon {
     position: absolute;
     right : 25px;
     top: 68px;
+    z-index: 100;
 }
 
 
@@ -342,7 +346,7 @@ nav a {
     display: none;
 }
       
-#cart-checkbox:checked ~ .cart, .profile-icon {
+#cart-checkbox:checked ~ .cart, #profile-icon {
     display: block;
 }
 
@@ -373,6 +377,10 @@ nav a {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 130px auto;   
+}
+
+.home_content-left {
+    margin: 0px auto;
 }
 
 .home__content section {

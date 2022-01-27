@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Buy videogames at low prices">
-    <title>GameHub | Shopping Cart</title>
+    <title>GameHub | Account</title>
+    <link href="css/account.css" rel="stylesheet">
     <link href="css/cart.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/variables.css" rel="stylesheet">
@@ -40,18 +41,20 @@
         <a href="account.html"><i class="fas fa-user" id="profile-icon"></i></a>
       </div>
   </header>
-  <main class="cart-content">
-      <section class="cart_content-one">
-        <img src="images/image_product_one.jpg" alt="Racing game" class="cart-image">
-            <div class="cart_content-info">
-                <h2>Racing</h2>
-                <label for="quantity" class="label-form">Qty</label>
-                <input type="number" name="Quantity" id="quantity">
-                <p>Price $$$</p> 
-            </div>
-      </section>
-        <p>Total $$$</p>
-        <a href="checkout.html" class="cta"> TO CHECKOUT </a>
+  <main >
+      <h1>My Account</h1>
+      <div class="account">
+        <section class="account_list">
+            <a href="cart.html">Shopping Cart</a>
+            <a href="#">My Orders</a>
+            <a href="#">My Sales</a>
+            <a href="#">Account Settings</a>       
+        </section>
+        <section class="profile">
+            <img src="images/avatar.png" alt="avatar of a person in a circle" class="profile_image">
+            <a href="#">Edit Profile</a>
+        </section>
+      </div>     
   </main>
   <footer>
     <div>

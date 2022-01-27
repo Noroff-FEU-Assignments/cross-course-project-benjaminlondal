@@ -1,0 +1,120 @@
+/** Account--
+---------------**/
+
+.account {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+}
+
+.profile_image {
+    max-width: 100px;
+}
+
+.account_list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.account a {
+    text-decoration: none;
+    font-family: var(--font_fut);
+    font-size: 2em;
+    color: #FFF;
+    margin: 10px;
+}
+
+/** Create Account--
+------------------------**/
+
+.create_account input {
+    margin: 10px 0px;
+}
+
+.create_account {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.create_account-content {
+    margin-bottom: 30px;
+}
+
+.fb {
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 auto;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: var(--border);
+    background: #3b5998;;
+    border-radius: 5px;
+    max-width: 250px;
+    
+}
+
+.fb-icon {
+    margin-right: 10px;
+    font: normal normal normal 35px/1 FontAwesome;
+    color: #FFF;
+}
+
+.remember_me {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+#remember {
+    margin: 0px;
+    width: 40px;
+}
+
+.success_container .cta{
+    margin-top: 30px;
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+.account {
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.profile_image {
+    max-width: 250px;
+}
+
+.account a {
+    text-decoration: none;
+    font-family: var(--font_fut);
+    font-size: 2.5em;
+    color: #FFF;
+    margin: 10px;
+}
+
+
+/** Create Account--
+-----------------------**/
+
+.create_account {
+    max-width: 400px;
+}
+
+
+}
