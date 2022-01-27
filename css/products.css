@@ -144,7 +144,6 @@ main p {
 
 .product_specific .cta {
     width: 300px;
-    margin-top: none;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 3;

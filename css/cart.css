@@ -1,7 +1,7 @@
 .cart-content {
     display: flex;
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     margin: 0 auto;
     flex-direction: column;
     margin-top: 50px;

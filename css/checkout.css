@@ -71,6 +71,7 @@ label {
     grid-column-end: 4;
     grid-row-start: 3;
     font-size: 2em;
+    color: var(--color_tertiary);
 
 }
 
