@@ -206,6 +206,9 @@ footer {
     text-align: left;
 }
 
+.home__content-right {
+    margin: 10px auto;
+}
 .home__content .cta {
     margin-bottom: 10px;
 }
@@ -370,7 +373,6 @@ nav a {
     max-height: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: auto;
     margin-top: 130px;   
 }
 
@@ -378,9 +380,11 @@ nav a {
     border: 1px solid #1bf23c;    
 }
 
+
 .home_one {
     display: flex;
     flex-direction: column;
+    margin-top: 10px auto;
 }
 
 .home_two, .home_three {
