@@ -79,6 +79,10 @@ img {
     text-align: center;
 }
 
+.success_container .cta {
+    margin: 30px auto;
+}
+
 /**Header**/
 
 
