@@ -79,6 +79,10 @@
     width: 40px;
 }
 
+.account a:hover {
+    color: var(--color_tertiary);
+}
+
 
 
 

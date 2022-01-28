@@ -435,7 +435,7 @@ nav a {
     max-width: 996px;
     height: 100%;
     order: 1;
-    border: 1px solid #1bf23c;
+    border: 1px solid var(--color_tertiary);
 }   
 
 .home__image_two-large {
@@ -473,7 +473,7 @@ nav a {
 footer {
     display: flex;
     justify-content: space-between;
-    color: #1bf23c;
+    color: var(--color_tertiary);
     align-items: center;
     padding: 0 25px;
 }
