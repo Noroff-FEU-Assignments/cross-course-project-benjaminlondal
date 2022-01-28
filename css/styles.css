@@ -66,6 +66,7 @@ a:hover,
 .cta:hover {
     color: var(--color_secondary);
     background: var(--color_tertiary);
+    cursor: pointer;
 }
 
 img {

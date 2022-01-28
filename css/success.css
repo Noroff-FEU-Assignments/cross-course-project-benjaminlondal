@@ -1,0 +1,25 @@
+/**Checkout Success--
+-------------------------**/
+.success_top {
+    margin: 0 10px;
+}
+.success_container {
+    text-align: center;
+
+}
+
+.success {
+    color: var(--color_tertiary);
+    font: normal normal normal 200px/1 FontAwesome;
+    margin-bottom: 25px;
+}
+/**Checkout Success--
+-------------------------**/
+@media screen and (min-width: 1024px) {
+
+.success {
+    font: normal normal normal 350px/1 FontAwesome;
+
+}
+
+}

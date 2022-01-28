@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Save money on used videogames">
-    <title>GameHub | Checkout</title>
+    <meta name="description" content="Buy and sell used videogames">
+    <title>GameHub | Contact</title>
     <script src="https://kit.fontawesome.com/c965e83369.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/ioh2pps.css">
     <link href="css/variables.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/checkout.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <div id="header-inner">
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="hamburger-menu">
-          <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
         </label>
         <div id="grid-logo">
           <a href="index.html"><img src="images/img_logo.png" alt="GameHub Logo" class="logo"/></a>
@@ -34,37 +34,27 @@
             <a href="products.html" id="nav-products">Buy Games</a>
             <a href="create_account.html" id="nav-sell">Sell Games</a>
             <a href="account.html" id="nav-account">My Account</a>
-            <a href="#" id="nav-contact">Contact</a>
+            <a href="contact.html" id="nav-contact" class="active">Contact</a>
         </nav>
-        <label for="cart-checkbox" class="cart-icon"><i class="fas fa-shopping-cart" id="grid-cart"></i></label>  
+        <label for="cart-checkbox" class="cart-icon"><i class="fas fa-shopping-cart" id="grid-cart"></i></label>
         <a href="account.html"><i class="fas fa-user" id="profile-icon"></i></a>
       </div>
   </header>
-  <main class="checkout">
-      <h1>Checkout</h1>
-      <form action="/checkout_success.html" method="GET">
-      <div class="checkout_content">
-        <section class="form-wrapper">
-                <label for="name">Your name</label>
-                <input type="text" name="name" id="name">
-                <label for="address"> Shipping Address </label>
-                <input type="text" name="address" id="address">
-                <label for="cardinfo">Card number</label>
-                <input type="tel" name="cardinfo" id="cardinfo">
-                <label for="exp">Expiration date</label>
-                <input type="tel" pattern="\d*" maxlength="7" inputmode="numeric" placeholder="MM / YY" name="exp" id="exp">
-                <label for="cvc">CVC</label>
-                <input type="tel" maxlength="3" inputmode="numeric" placeholder="CVC" name="cvc" id="cvc">
-        </section>
-        <section class="checkout_info">
-            <h2>1x Racing</h2>
-            <p class="cost">$$$</p>
-            <img src="/images/image_product_one.jpg" alt="Racing game" class="checkout_image">
-            <p class="total">Total $$$</p>
-        </section>
-      </div>
-      <input type="submit" class="cta" id="send" value="PLACE MY ORDER">
-    </form>
+  <main class="contact">
+      <h1>Contact</h1>
+      <form action="contact_success.html" method="GET">
+          <div class="contact-wrapper">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email">
+            <label for="ordernumber">Order Number (Optional)</label>
+            <input type="tel" name="ordernumber" id="ordernumber">
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <input type="submit" class="cta" id="send" value="SEND REQUEST">
+      </form>
   </main>
   <footer>
     <div>
