@@ -22,7 +22,7 @@ body {
 
 h1 {
     font-family: var(--font_fut);
-    font-size: 3em;
+    font-size: 2em;
     color: #FFF;
     text-align: center;
 }
@@ -35,7 +35,13 @@ h2 {
     margin: 0px;
 }
 
-
+.search-label {
+    position: absolute; left: -100000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
 label:hover, a:hover {
     cursor: pointer;
@@ -193,7 +199,7 @@ footer {
     text-align: center;
     color: var(--color_tertiary);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 10px 0 0 20px;
 }
 
 /** Home 
@@ -262,6 +268,10 @@ footer {
 
 
 @media screen and (min-width: 1024px) {
+
+h1 {
+    font-size: 2.5em;
+}
 
 .cta {
     font-size: 1.5em;
