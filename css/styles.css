@@ -35,13 +35,7 @@ h2 {
     margin: 0px;
 }
 
-.search-label {
-    position: absolute; left: -100000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
+
 
 label:hover, a:hover {
     cursor: pointer;
@@ -186,6 +180,14 @@ nav a {
     grid-column-start: 1;
     grid-row-start: 2;
     justify-self: center;
+}
+
+.search-label {
+    position: absolute; left: -100000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .cart-icon {
