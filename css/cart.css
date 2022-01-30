@@ -73,7 +73,6 @@ input {
     .cart_content-one {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 50px auto;
         align-items: flex-end;   
     }
 
