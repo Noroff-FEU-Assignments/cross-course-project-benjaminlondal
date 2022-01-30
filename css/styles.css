@@ -182,8 +182,8 @@ nav a {
 }
 
 .search-label {
-    position: absolute; left: -100000px;
-    top: auto;
+    position: absolute; 
+    left: -10000px;
     width: 1px;
     height: 1px;
     overflow: hidden;
