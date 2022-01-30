@@ -3,7 +3,6 @@
     src: url(../fonts/ROCK.TTF) format('truetype');
 }
 
-@import url(variables.css);
 /** Global
 ------------------->**/
 
@@ -346,7 +345,6 @@ nav {
     margin-top: 57px;
     border: none;
     font-size: 1.5vw;
-    padding: none;
     background:none;
     padding-right: 110px;
 }
@@ -408,7 +406,6 @@ nav a {
 .home_one {
     display: flex;
     flex-direction: column;
-    margin-top: 10px auto;
 }
 
 .home_two, .home_three {
