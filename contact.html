@@ -53,18 +53,26 @@
   </header>
   <main class="contact">
       <h1>Contact</h1>
-      <form action="contact_success.html" method="GET">
-          <div class="contact-wrapper">
-            <label for="name">Your name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Your Email</label>
-            <input type="email" name="email" id="email">
-            <label for="ordernumber">Order Number (Optional)</label>
-            <input type="tel" name="ordernumber" id="ordernumber">
-            <label for="message">Your Message</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <input type="submit" class="cta" id="send" value="SEND REQUEST">
+          <label for="name">
+            Full name (Required field)
+          </label>
+          <input type="text" name="name" id="name" required>
+          <label for="email">
+              Email (Required field)
+          </label>
+          <input type="email" name="email" id="email" required>
+          <label for="ordernumber">
+              Order Number (Optional)
+          </label>
+          <input type="tel" name="ordernumber" id="ordernumber" required>
+          <label for="message">
+              Message (Min. 25 characters)
+            </label>
+            <textarea name="message" id="message" required></textarea>
+            <div class="feedback" id="nameError">Please fill in your name</div>
+            <div class="feedback" id="emailError">Please enter a valid email address</div>
+            <div class="feedback" id="messageError">Message must be a minimum of 25 characters</div>
+          <button type="submit" class="cta" id="send">Send request</button>
       </form>
   </main>
   <footer>

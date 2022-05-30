@@ -26,6 +26,12 @@ h1 {
     text-align: center;
 }
 
+.slogan {
+    color: var(--color_secondary);
+    -webkit-text-stroke: 2px var(--color_tertiary);
+    margin: 0 auto;
+}
+
 h2 {
     font-family: var(--font_fut);
     font-weight: bold;
@@ -51,8 +57,8 @@ a:hover,
     max-width: 243px;
     margin: 0 auto;
     border: var(--border);
-    color: var(--color_tertiary);
-    background: var(--color_secondary);
+    color: var(--color_secondary);
+    background: var(--color_tertiary);
     border-radius: 50px;
     font-weight: bold;
     font-size: 0.8em;
@@ -60,12 +66,14 @@ a:hover,
     padding: 5px 10px;
     text-align: center;
     text-transform: uppercase;
+    box-shadow: 0px 10px 30px black;
 }
 
 .cta:hover {
-    color: var(--color_secondary);
-    background: var(--color_tertiary);
+    color: var(--color_tertiary);
+    background: var(--color_secondary);
     cursor: pointer;
+    box-shadow: 0px 10px 30px #1bf23c;
 }
 
 img {
@@ -344,7 +352,7 @@ nav {
     display: inline-block;
     margin-top: 57px;
     border: none;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     background:none;
     padding-right: 110px;
 }
