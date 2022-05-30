@@ -282,6 +282,9 @@ h1 {
     font-size: 2.5em;
 }
 
+.slogan {
+    transform: translateX(-200px);
+}
 .cta {
     font-size: 1.5em;
 }
