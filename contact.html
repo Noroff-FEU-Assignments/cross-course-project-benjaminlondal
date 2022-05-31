@@ -51,28 +51,30 @@
         <a href="account.html"><i class="fas fa-user" id="profile-icon" title="My Account"></i></a>
       </div>
   </header>
-  <main class="contact">
+  <main>
       <h1>Contact</h1>
+        <form class="contact" action="account_success.html">
           <label for="name">
-            Full name (Required field)
+            Full Name (Required field)
           </label>
-          <input type="text" name="name" id="name" required>
+          <input type="text" name="name" id="name">
+          <div class="feedback" id="nameError">Please fill in your name</div>
           <label for="email">
               Email (Required field)
           </label>
-          <input type="email" name="email" id="email" required>
+          <input type="email" name="email" id="email">
+          <div class="feedback" id="emailError">Please enter a valid email address</div>
           <label for="ordernumber">
               Order Number (Optional)
           </label>
-          <input type="tel" name="ordernumber" id="ordernumber" required>
+          <input type="tel" inputmode="numeric" pattern="[0-9]+" maxlength="19" name="ordernumber" id="ordernumber">
+          <div class="feedback" id="orderNumberError">Must be a number</div>
           <label for="message">
               Message (Min. 25 characters)
-            </label>
-            <textarea name="message" id="message" required></textarea>
-            <div class="feedback" id="nameError">Please fill in your name</div>
-            <div class="feedback" id="emailError">Please enter a valid email address</div>
-            <div class="feedback" id="messageError">Message must be a minimum of 25 characters</div>
-          <button type="submit" class="cta" id="send">Send request</button>
+          </label>
+          <textarea name="message" id="message"></textarea>
+          <div class="feedback" id="messageError">Message must be a minimum of 25 characters</div>
+          <button disabled type="submit" class="cta" id="send">Send request</button>
       </form>
   </main>
   <footer>
@@ -81,5 +83,6 @@
     </div>
     Copyright &copy; 2021-2022 GameHub
   </footer>
+  <script src="/js/contact.js"></script>
   </body>
 </html>
