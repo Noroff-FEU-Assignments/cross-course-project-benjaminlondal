@@ -72,6 +72,7 @@ input {
 
 #shop-overlay p {
     margin: 10px;
+    font-size: 3vw;
 }
 
 
@@ -92,6 +93,11 @@ input {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;   
+    }
+
+    #shop-overlay p {
+        margin: 10px;
+        font-size: 1.5em;
     }
 
 
