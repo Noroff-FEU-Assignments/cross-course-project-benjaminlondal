@@ -35,6 +35,7 @@
         <input type="checkbox" id="cart-checkbox">
         <section class="cart">
           <h3>1x Racing</h3>
+          <img id="cart-image" src="images/image_product_one.jpg">
           <p>Total: $$$</p>
           <a href="cart.html" class="cta"> View Cart </a>
           <a href="checkout.html" class="cta"> Checkout </a>
@@ -53,8 +54,16 @@
   </header>
   <main class="checkout">
       <h1>Checkout</h1>
-      <form action="/checkout_success.html" method="GET">
       <div class="checkout_content">
+        <section class="checkout_info">
+          <div class="checkout-content">
+            <h2>1x Racing</h2>
+            <img src="images/image_product_one.jpg" alt="Racing game" class="checkout_image">
+            <p class="cost">$$$</p>
+            <p class="total">Total $$$</p>
+          </div>
+        </section>
+      <form action="/checkout_success.html" method="GET">
         <section class="form-wrapper">
           <h2>Your info</h2>
           <label for="name">Your name</label>
@@ -67,12 +76,6 @@
           <input type="tel" pattern="\d*" maxlength="7" inputmode="numeric" placeholder="MM / YY" name="exp" id="exp">
           <label for="cvc">CVC</label>
           <input type="tel" maxlength="3" inputmode="numeric" placeholder="CVC" name="cvc" id="cvc">
-        </section>
-        <section class="checkout_info">
-            <h2>1x Racing</h2>
-            <p class="cost">$$$</p>
-            <img src="/images/image_product_one.jpg" alt="Racing game" class="checkout_image">
-            <p class="total">Total $$$</p>
         </section>
       </div>
       <input type="submit" class="cta" id="send" value="PLACE MY ORDER">

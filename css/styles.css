@@ -81,7 +81,6 @@ img {
 }
 
 .cost {
-    color: var(--color_tertiary);
     padding: 5px 10px;
     text-align: center;
 }
@@ -204,7 +203,6 @@ nav a {
 /**Footer**/
 footer {
     text-align: center;
-    color: var(--color_tertiary);
     font-weight: bold;
     margin: 10px 0 0 20px;
 }
@@ -378,10 +376,10 @@ nav a {
 .cart {
     position: absolute;
     background-color: #163a5a;
-    margin-top: 448px;
+    margin-top: 450px;
     right: 0;
     border: 0.5px solid #1bf23c;
-    z-index: 1;
+    z-index: 1000;
     width: 300px;
 }
 
@@ -492,7 +490,6 @@ nav a {
 footer {
     display: flex;
     justify-content: space-between;
-    color: var(--color_tertiary);
     align-items: center;
     padding: 0 25px;
 }

@@ -31,7 +31,6 @@
 }
 
 .cart-content p {
-    color: var(--color_tertiary);
     text-align: center;
     margin-top: 30px;
     font-size: 1.5em;
@@ -74,10 +73,6 @@ input {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;   
-    }
-
-    .cart-content p {
-        margin-top: 150px;
     }
 
 

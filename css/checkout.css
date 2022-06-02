@@ -52,11 +52,14 @@ label {
 }
 
 .checkout_info {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 1000px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+.checkout-content {
+    margin: 0 auto;
 }
 
 #send {
@@ -67,9 +70,7 @@ label {
 
 .checkout_info .cost {
     font-size: 1.2em;
-    grid-row-start: 1;
-    grid-column-start: 2;
-    align-self: center;
+    text-align: right;
 }
 
 .total {
@@ -78,17 +79,13 @@ label {
     grid-column-end: 4;
     grid-row-start: 3;
     font-size: 2em;
-    color: var(--color_tertiary);
 
 }
 
 .checkout_image {
     width: 100%;
-    max-width: 70px;
-    height: 100%;
-    max-height: 88px;
-    grid-column-start: 3;
-    grid-row-start: 1;
+    max-width: 150px;
+    margin-top: 10px;
 }
 
 #exp {
