@@ -13,5 +13,5 @@ detailContainer.innerHTML += `<div class="product_specific">
                                 <img src="${game.image}" alt="Racing game" class="product_content_specific">
                                 <h1>${game.title} (${game.year})</h1>
                                 <p class="product_specific_info">${game.about}</p>
-                                <p class="cost">Price: ${game.price}</p>
+                                <p class="cost">Price: $${game.price}</p>
                             </div>`;

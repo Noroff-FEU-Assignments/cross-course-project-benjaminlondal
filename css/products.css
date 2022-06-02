@@ -83,6 +83,14 @@ main p {
     max-width: 500px;
 }
 
+.back-btn {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font_fut);
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
 
 @media screen and (min-width: 1024px) {
 
