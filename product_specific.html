@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/c965e83369.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/ioh2pps.css">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
     <link href="css/products.css" rel="stylesheet">
     <!-- Hotjar Tracking Code for https://wizardly-yalow-93b1e6.netlify.app/ -->
     <script>
@@ -52,21 +53,26 @@
       </div>
     </header>
     <main>
+      <div id="shop-overlay">
+        <p>Great! Your new game is waiting in the shopping cart!</p>
+        <a href="products.html" class="cta">Continue Shoppping</a>
+        <p>or</p>
+        <a href="checkout.html" class="cta">Proceed to checkout</a>
+      </div>
       <div class="product_specific">
         <img src="images/image_product_one.jpg" alt="Racing game" class="product_content_specific">
         <h1>Racing (2021)</h1>
         <p class="product_specific_info">Racing is the new racecar game on Playbox. Build and upgrade your cars to race for grand prizes!</p>
         <p class="cost">Price $$$</p>
       </div>
-      <div class="product_cta_container">
-        <a href="cart.html" class="cta"> Add to Cart </a>
-        <a href="checkout.html" class="cta"> Buy now! </a>
-      </div>
+        <a href="javascript:displayShopOverlay()" class="cta"> Add to Cart </a>
     </main>
     <footer>
         <div>
           <i class="fab fa-instagram footer-icon" title="Instagram"></i><i class="fab fa-twitter footer-icon" title="Twitter"></i><i class="fab fa-facebook-square footer-icon" title="Facebook"></i>
         </div>
         Copyright &copy; 2021-2022 GameHub
-      </footer>
-      </html>
+    </footer>
+    <script src="js/functions.js"></script>
+  </body>
+</html>
