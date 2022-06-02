@@ -99,7 +99,6 @@ h2 {
     text-align: center;
 }
 
-
 .content-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -119,8 +118,6 @@ h2 {
 main p {
     font-size: 1.5em; 
 }
-
-
 
 .scroll-top {
     grid-column: 2;

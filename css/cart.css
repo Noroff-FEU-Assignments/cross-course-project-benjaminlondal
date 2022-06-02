@@ -61,13 +61,16 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    margin: 0 auto;
     border: 1px solid var(--color_tertiary);
     border-radius: 15px;
     background-color: var(--color_secondary);
     padding: 40px;
     box-shadow: 0px 0px 100px blue;
     display: none;
+}
+
+#shop-overlay #cart-message {
+    margin-bottom: 45px;
 }
 
 #shop-overlay p {

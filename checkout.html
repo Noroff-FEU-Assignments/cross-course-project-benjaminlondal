@@ -72,10 +72,12 @@
           <input type="text" name="address" id="address">
           <label for="cardinfo">Card number</label>
           <input type="tel" name="cardinfo" id="cardinfo">
-          <label for="exp">Expiration date</label>
-          <input type="tel" pattern="\d*" maxlength="7" inputmode="numeric" placeholder="MM / YY" name="exp" id="exp">
-          <label for="cvc">CVC</label>
-          <input type="tel" maxlength="3" inputmode="numeric" placeholder="CVC" name="cvc" id="cvc">
+          <div class="formwrap-container">
+            <label for="exp">Exp. date</label>
+            <input type="tel" pattern="\d*" maxlength="7" inputmode="numeric" placeholder="MM / YY" name="exp" id="exp">
+            <label for="cvc">CVC</label>
+            <input type="tel" maxlength="3" inputmode="numeric" placeholder="CVC" name="cvc" id="cvc">
+          </div>
         </section>
       </div>
       <input type="submit" class="cta" id="send" value="PLACE MY ORDER">
