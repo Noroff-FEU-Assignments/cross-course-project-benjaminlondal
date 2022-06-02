@@ -64,12 +64,12 @@ export let games = [
         price: 9.99,
     },
     {
-        "id": 9,
-        "image": "../images/image_product_nine.jpg",
-        "title": "Assassin",
-        "year": 2021,
-        "about": "Play the role of the famous Ninja Assassin. Develop your skills and hunt powerful enemies.",
-        "price": 7.99,
+        id: 9,
+        image: "../images/image_product_nine.jpg",
+        title: "Assassin",
+        year: 2021,
+        about: "Play the role of the famous Ninja Assassin. Develop your skills and hunt powerful enemies.",
+        price: 7.99,
     }
 
 ]

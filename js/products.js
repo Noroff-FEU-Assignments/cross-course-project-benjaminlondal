@@ -3,8 +3,6 @@ import { games } from "./data/games.js";
 const gameContainer = document.querySelector(".game-container");
 let gamesToRender = games;
 
-
-
 function renderGames() {
     gamesToRender.forEach(function(games) {
         gameContainer.innerHTML += `<div class="product_content">
