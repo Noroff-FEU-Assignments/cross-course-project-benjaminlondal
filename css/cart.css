@@ -72,27 +72,38 @@ input {
 
 #shop-overlay p {
     margin: 10px;
-    font-size: 3vw;
+    font-size: 1.2em;
+    padding: 0px;
 }
 
 
 @media screen and (min-width: 1024px) {
 
     .cart-content {
-        display: flex;
         width: 100%;
         max-width: 1000px;
         margin-top: 100px;
     }
 
-    .cart-image {
-        max-width: 250px;
+    .cart-products {
+        border-right: 1px solid var(--color_tertiary);
+        padding: 10px;
     }
 
-    .cart_content-one {
+    .cart_content-info {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;   
+        flex-direction: column;
+    }
+
+    .vertical-line {
+        display: inline-block;
+        
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .cart-image {
+        max-width: 250px;
     }
 
     #shop-overlay p {
