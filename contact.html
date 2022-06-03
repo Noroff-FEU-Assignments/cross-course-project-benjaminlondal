@@ -32,7 +32,6 @@
         <div id="grid-logo">
           <a href="index.html"><img src="images/image_logo.png" alt="GameHub Logo" class="logo"/></a>
         </div>
-        <input type="checkbox" id="cart-checkbox">
         <section class="cart">
           <h3>1x Racing</h3>
           <img id="cart-image" src="images/image_product_one.jpg">
@@ -51,39 +50,40 @@
         <label for="cart-checkbox" class="cart-icon"><i class="fas fa-shopping-cart" id="grid-cart" title="Shopping Cart"></i></label>
         <a href="account.html"><i class="fas fa-user" id="profile-icon" title="My Account"></i></a>
       </div>
-  </header>
-  <main>
-      <h1>Contact</h1>
-        <form class="contact" action="contact_success.html">
-          <label for="name">
-            Full Name (Required field)
-          </label>
-          <input type="text" name="name" id="name">
-          <div class="feedback" id="nameError">Please fill in your name</div>
-          <label for="email">
-              Email (Required field)
-          </label>
-          <input type="email" name="email" id="email">
-          <div class="feedback" id="emailError">Please enter a valid email address</div>
-          <label for="order-ref">
-              Order Reference (Optional)
-          </label>
-          <input type="tel" maxlength="10" name="order-ref" id="order-ref">
-          <div class="feedback" id="orderNumberError">Must be a number</div>
-          <label for="message">
-              Message (Min. 25 characters)
-          </label>
-          <textarea name="message" id="message"></textarea>
-          <div class="feedback" id="messageError">Message must be a minimum of 25 characters</div>
-          <button disabled type="submit" class="cta" id="send">Send request</button>
-      </form>
-  </main>
-  <footer>
-    <div>
-      <i class="fab fa-instagram footer-icon" title="Instagram"></i><i class="fab fa-twitter footer-icon" title="Twitter"></i><i class="fab fa-facebook-square footer-icon" title="Facebook"></i>
-    </div>
-    Copyright &copy; 2021-2022 GameHub
-  </footer>
-  <script src="/js/contact.js"></script>
+    </header>
+    <main>
+        <h1>Contact</h1>
+          <form class="contact" action="contact_success.html">
+            <label for="name">
+              Full Name (Required field)
+            </label>
+            <input type="text" name="name" id="name">
+            <div class="feedback" id="nameError">Please fill in your name</div>
+            <label for="email">
+                Email (Required field)
+            </label>
+            <input type="email" name="email" id="email">
+            <div class="feedback" id="emailError">Please enter a valid email address</div>
+            <label for="order-ref">
+                Order Reference (Optional)
+            </label>
+            <input type="tel" maxlength="10" name="order-ref" id="order-ref">
+            <div class="feedback" id="orderNumberError">Must be a number</div>
+            <label for="message">
+                Message (Min. 25 characters)
+            </label>
+            <textarea name="message" id="message"></textarea>
+            <div class="feedback" id="messageError">Message must be a minimum of 25 characters</div>
+            <button disabled type="submit" class="cta" id="send">Send request</button>
+        </form>
+    </main>
+    <footer>
+      <div>
+        <i class="fab fa-instagram footer-icon" title="Instagram"></i><i class="fab fa-twitter footer-icon" title="Twitter"></i><i class="fab fa-facebook-square footer-icon" title="Facebook"></i>
+      </div>
+      Copyright &copy; 2021-2022 GameHub
+    </footer>
+    <script src="js/functions.js"></script>
+    <script src="/js/contact.js"></script>
   </body>
 </html>

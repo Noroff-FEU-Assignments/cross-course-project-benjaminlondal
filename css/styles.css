@@ -118,7 +118,7 @@ img {
     max-width: 50px;
 }
 
-.cart, #cart-checkbox, nav, #menu-checkbox   {
+#cart-checkbox, nav, #menu-checkbox   {
     display: none;   
 }
 
@@ -127,7 +127,7 @@ img {
 }
 
   
-#cart-checkbox:checked ~ .cart, #menu-checkbox:checked ~ nav {
+#menu-checkbox:checked ~ nav {
     display: block;
 }
 

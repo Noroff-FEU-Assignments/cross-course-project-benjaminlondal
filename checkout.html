@@ -32,7 +32,6 @@
         <div id="grid-logo">
           <a href="index.html"><img src="images/image_logo.png" alt="GameHub Logo" class="logo"/></a>
         </div>
-        <input type="checkbox" id="cart-checkbox">
         <section class="cart">
           <h3>1x Racing</h3>
           <img id="cart-image" src="images/image_product_one.jpg">
@@ -51,43 +50,44 @@
         <label for="cart-checkbox" class="cart-icon"><i class="fas fa-shopping-cart" id="grid-cart" title="Shopping Cart"></i></label>  
         <a href="account.html"><i class="fas fa-user" id="profile-icon" title="My Account"></i></a>
       </div>
-  </header>
-  <main class="checkout">
-      <h1>Checkout</h1>
-      <div class="checkout_content">
-        <section class="checkout_info">
-          <div class="checkout-content">
-            <h2>1x Racing</h2>
-            <img src="images/image_product_one.jpg" alt="Racing game" class="checkout_image">
-            <p class="cost">$$$</p>
-            <p class="total">Total $$$</p>
-          </div>
-        </section>
-      <form action="/checkout_success.html" method="GET">
-        <section class="form-wrapper">
-          <h2>Your info</h2>
-          <label for="name">Your name</label>
-          <input type="text" name="name" id="name">
-          <label for="address"> Shipping Address </label>
-          <input type="text" name="address" id="address">
-          <label for="cardinfo">Card number</label>
-          <input type="tel" name="cardinfo" id="cardinfo">
-          <div class="formwrap-container">
-            <label for="exp">Exp. date</label>
-            <input type="tel" pattern="\d*" maxlength="7" inputmode="numeric" placeholder="MM / YY" name="exp" id="exp">
-            <label for="cvc">CVC</label>
-            <input type="tel" maxlength="3" inputmode="numeric" placeholder="CVC" name="cvc" id="cvc">
-          </div>
-        </section>
+    </header>
+    <main class="checkout">
+        <h1>Checkout</h1>
+        <div class="checkout_content">
+          <section class="checkout_info">
+            <div class="checkout-content">
+              <h2>1x Racing</h2>
+              <img src="images/image_product_one.jpg" alt="Racing game" class="checkout_image">
+              <p class="cost">$$$</p>
+              <p class="total">Total $$$</p>
+            </div>
+          </section>
+        <form action="/checkout_success.html" method="GET">
+          <section class="form-wrapper">
+            <h2>Your info</h2>
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name">
+            <label for="address"> Shipping Address </label>
+            <input type="text" name="address" id="address">
+            <label for="cardinfo">Card number</label>
+            <input type="tel" name="cardinfo" id="cardinfo">
+            <div class="formwrap-container">
+              <label for="exp">Exp. date</label>
+              <input type="tel" pattern="\d*" maxlength="7" inputmode="numeric" placeholder="MM / YY" name="exp" id="exp">
+              <label for="cvc">CVC</label>
+              <input type="tel" maxlength="3" inputmode="numeric" placeholder="CVC" name="cvc" id="cvc">
+            </div>
+          </section>
+        </div>
+        <input type="submit" class="cta" id="send" value="PLACE MY ORDER">
+      </form>
+    </main>
+    <footer>
+      <div>
+        <i class="fab fa-instagram footer-icon" title="Instagram"></i><i class="fab fa-twitter footer-icon" title="Twitter"></i><i class="fab fa-facebook-square footer-icon" title="Facebook"></i>
       </div>
-      <input type="submit" class="cta" id="send" value="PLACE MY ORDER">
-    </form>
-  </main>
-  <footer>
-    <div>
-      <i class="fab fa-instagram footer-icon" title="Instagram"></i><i class="fab fa-twitter footer-icon" title="Twitter"></i><i class="fab fa-facebook-square footer-icon" title="Facebook"></i>
-    </div>
-    Copyright &copy; 2021-2022 GameHub
-  </footer>
+      Copyright &copy; 2021-2022 GameHub
+    </footer>
+    <script src="js/functions.js"></script>
   </body>
 </html>
