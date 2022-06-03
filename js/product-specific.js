@@ -18,14 +18,13 @@ detailContainer.innerHTML += `<div class="product_specific">
 
 
 const button = document.querySelector("button");
-//var cartArray = [];
 
-//function addArray(event) {
+var cartArray = [];
+
+button.onclick = function(event){
+
+    cartArray.push(event.target.dataset.game);
+    displayShopOverlay();
+    console.log(cartArray);
     
-//    const itemToAdd = games.find(item => item.id === event.target.dataset.game);
-//    cartArray.push(itemToAdd);
-//}
-
-button.onclick = displayShopOverlay, displayCartDropDown;
-
-//console.log(cartArray)
+  }
