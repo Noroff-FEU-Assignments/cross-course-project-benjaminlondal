@@ -150,6 +150,7 @@ nav a {
 }
 
 .cart {
+    display: none;
     position: absolute;
     background-color: #163a5a;
     margin-top: 50px;
