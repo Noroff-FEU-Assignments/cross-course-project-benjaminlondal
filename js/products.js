@@ -1,20 +1,26 @@
-import { games } from "./data/games.js";
-
+const gamesUrl = "https://gamehub-api-games.dvergnir.one/wp-json/wc/store/products";
 const gameContainer = document.querySelector(".game-container");
-let gamesToRender = games;
 
-function renderGames() {
-    gamesToRender.forEach(function(games) {
-        gameContainer.innerHTML += `<div class="product_content">
-                                        <a href="product_specific.html?id=${games.id}">
-                                        <img src="${games.image}" alt="cover of ${games.title}"></a>
-                                        <h2>${games.title}(${games.year})</h2>
-                                        <p>$${games.price}</p>
-                                        <a href="product_specific.html?id=${games.id}" class="cta"> VIEW GAME </a>
-                                    </div>`;
-    
-    
-    });
-}
+async function getProducts(url){
 
-renderGames();
+    try {
+        const response = await fetch(url);
+        const products = await response.json();
+
+        products.forEach(function(product){
+            gameContainer.innerHTML += `<div class="product_content">
+                                            <a href="product_specific.html?id=${product.id}">
+                                            <img src="${product.images[0].src}" alt="${product.images[0].alt}"></a>
+                                            <h2>${product.name}</h2>
+                                            <p>$${product.prices.price}</p>
+                                            <a href="product_specific.html?id=${product.id}" class="cta"> VIEW GAME </a>
+                                        </div>`;
+
+        });
+    } catch(error) {
+        console.log(error);
+    }
+    }
+   
+
+getProducts(gamesUrl);

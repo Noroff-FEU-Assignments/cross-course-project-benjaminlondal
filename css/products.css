@@ -131,4 +131,18 @@ main p {
     grid-column: 2;
 }
 
+/**Product Specific--
+----------------------------**/
+
+.product_specific img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.product_specific_info {
+    font-size: 1em;
+}
+
+
+
 }

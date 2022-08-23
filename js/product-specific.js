@@ -1,30 +1,38 @@
-import { games } from "./data/games.js";
-
 const detailContainer = document.querySelector(".detail-container");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-const game = games.find( ({ id }) => id == params.get("id"));
+const id = params.get("id");
 
-document.title = `${game.title} | GameHub`;
+const gameUrl = "https://gamehub-api-games.dvergnir.one/wp-json/wc/store/products/" + id;
 
-detailContainer.innerHTML += `<div class="product_specific">
-                                <img src="${game.image}" alt="Racing game" class="product_content_specific">
-                                <h1>${game.title} (${game.year})</h1>
-                                <p class="product_specific_info">${game.about}</p>
-                                <p class="cost">Price: $${game.price}</p>
-                                <button class="cta" data-game=${game.id}> Add to Cart </button>
-                            </div>`;
+async function getProducts(gameUrl){
 
+  try {
+      const response = await fetch(gameUrl);
+      const products = await response.json();
 
+        document.title = `${products.name} | GameHub`;
+
+        detailContainer.innerHTML += `<div class="product_specific">
+                                        <img src="${products.images[0].src}" alt="${products.images[0].alt}"></a>
+                                        <h1>${products.name}</h1>
+                                        <p class="product_specific_info">${products.description}</p>
+                                        <p class="cost">Price: $${products.prices.price}</p>
+                                        <button class="cta" data-game=${products.id}> Add to Cart </button>
+                                    </div>`;
+
+  } catch(error) {
+      console.log(error);
+  }
+  }
+ 
+
+getProducts(gameUrl);
 
 const button = document.querySelector("button");
 
-var cartArray = [];
-
 button.onclick = function(event){
 
-    cartArray.push(event.target.dataset.game);
-    displayShopOverlay();
-    console.log(cartArray);
-    
-  }
+  displayShopOverlay();
+  
+}
