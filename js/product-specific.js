@@ -7,9 +7,13 @@ const gameUrl = "https://gamehub-api-games.dvergnir.one/wp-json/wc/store/product
 
 async function getProducts(gameUrl){
 
+  showLoadingIndicator()
+
   try {
       const response = await fetch(gameUrl);
       const products = await response.json();
+
+      hideLoadingIndicator()
 
         document.title = `${products.name} | GameHub`;
 
@@ -24,7 +28,7 @@ async function getProducts(gameUrl){
   } catch(error) {
       console.log(error);
   }
-  }
+}
  
 
 getProducts(gameUrl);

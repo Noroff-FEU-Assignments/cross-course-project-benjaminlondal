@@ -3,9 +3,13 @@ const gameContainer = document.querySelector(".game-container");
 
 async function getProducts(url){
 
+    showLoadingIndicator()
+
     try {
         const response = await fetch(url);
         const products = await response.json();
+
+        hideLoadingIndicator()
 
         products.forEach(function(product){
             gameContainer.innerHTML += `<div class="product_content">
@@ -20,7 +24,7 @@ async function getProducts(url){
     } catch(error) {
         console.log(error);
     }
-    }
+}
    
 
 getProducts(gamesUrl);

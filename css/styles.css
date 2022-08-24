@@ -5,9 +5,26 @@
 
 /** Global
 ------------------->**/
+.loading {
+    display: flex;
+    justify-content: center;
+}
 
+.loading::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 10px solid var(--color_tertiary);
+    border-radius: 30%;
+    animation: loading 2s infinite;
+    margin-top: 50px;
+}
 
-
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}
 
 body {
     background-color: #113A8C;
@@ -274,6 +291,12 @@ footer {
 
 
 @media screen and (min-width: 1024px) {
+
+.loading::after {
+        width: 100px;
+        height: 100px;
+        border: 20px solid var(--color_tertiary);
+}
 
 h1 {
     font-size: 2.5em;
