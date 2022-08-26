@@ -1,4 +1,5 @@
 const detailContainer = document.querySelector(".detail-container");
+const button = document.querySelector(".cart-btn");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -21,8 +22,8 @@ async function getProducts(gameUrl){
                                         <img src="${products.images[0].src}" alt="${products.images[0].alt}"></a>
                                         <h1>${products.name}</h1>
                                         <p class="product_specific_info">${products.description}</p>
-                                        <p class="cost">Price: $${products.prices.price}</p>
-                                        <button class="cta" data-game=${products.id}> Add to Cart </button>
+                                        <p class="cost">Price: ${products.price_html}</p>
+                                        <button class="cta cart-btn" data-game=${products.id}> Add to Cart </button>
                                     </div>`;
 
   } catch(error) {
@@ -32,8 +33,6 @@ async function getProducts(gameUrl){
  
 
 getProducts(gameUrl);
-
-const button = document.querySelector("button");
 
 button.onclick = function(event){
 

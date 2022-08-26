@@ -12,11 +12,12 @@ async function getProducts(url){
         hideLoadingIndicator()
 
         products.forEach(function(product){
+
             gameContainer.innerHTML += `<div class="product_content">
                                             <a href="product_specific.html?id=${product.id}">
                                             <img src="${product.images[0].src}" alt="${product.images[0].alt}"></a>
                                             <h2>${product.name}</h2>
-                                            <p>$${product.prices.price}</p>
+                                            <p>${product.price_html}</p>
                                             <a href="product_specific.html?id=${product.id}" class="cta"> VIEW GAME </a>
                                         </div>`;
 
