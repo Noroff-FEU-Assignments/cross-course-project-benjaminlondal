@@ -7,6 +7,7 @@ An ecommerce store to buy or sell used videogames.
 ## Description
 
 Create an account and post your video games for sale, or scroll the games available and buy a used videogame from another user.
+The project was a cross-course project, used to learn HTML, CSS and Javascript.
 
 ## Built With
 
