@@ -31,11 +31,13 @@ git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-benjaminlon
 ```
 GitHub Desktop
 Code Editor (example: Visual Studio Code)
+Live Server extension in Visual Studio Code
 ```
 
 ### Running
 
-Clone the repository in GitHub Desktop and open with Visual Studio Code from the menu.
+Clone the repository in GitHub Desktop and open with Visual Studio Code from the menu. 
+Run Live Server from the 'Go Live' button in the bottom right corner.
 
 ## Contact
 
