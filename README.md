@@ -39,6 +39,4 @@ Clone the repository in GitHub Desktop and open with Visual Studio Code from the
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
 [My LinkedIn page](https://www.linkedin.com/in/benjamin-e-l%C3%B8ndal-024992252/)
