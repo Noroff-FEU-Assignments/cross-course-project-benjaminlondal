@@ -14,6 +14,7 @@ The project was a cross-course project, used to learn HTML, CSS and Javascript.
 - HTML5
 - CSS3
 - Javascript
+- Wordpress REST API
 
 ## Getting Started
 
