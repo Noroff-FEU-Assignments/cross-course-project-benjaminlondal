@@ -1,0 +1,25 @@
+{
+  "name": "cross-course-project-benjaminlondal",
+  "version": "1.0.0",
+  "description": "e-commerce site for videogames",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noroff-FEU-Assignments/cross-course-project-benjaminlondal.git"
+  },
+  "keywords": [
+    "games",
+    "used",
+    "buy",
+    "sell"
+  ],
+  "author": "Benjamin Londal <benjamin.londal@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noroff-FEU-Assignments/cross-course-project-benjaminlondal/issues"
+  },
+  "homepage": "https://github.com/Noroff-FEU-Assignments/cross-course-project-benjaminlondal#readme"
+}
